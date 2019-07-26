@@ -6,14 +6,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ResultadoActivity"
-        android:background="#feebee">
+        android:background="@drawable/gradient">
 
     <TextView
-            android:text="ALOHA fulano de tal"
+            android:text="A L O H A  fulano de tal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txvAloha" android:textSize="30sp"
-            android:textStyle="bold" android:textColor="#ef3e35" android:layout_marginTop="190dp"
+            android:textStyle="bold" android:textColor="@android:color/white" android:layout_marginTop="190dp"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="140dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="140dp"/>
@@ -23,29 +23,33 @@
             android:layout_height="wrap_content"
             android:id="@+id/txvIdade" android:textSize="20sp"
             android:layout_marginTop="30dp" app:layout_constraintTop_toBottomOf="@+id/txvAloha"
-            app:layout_constraintEnd_toEndOf="@+id/txvAloha" app:layout_constraintStart_toStartOf="@+id/txvAloha"/>
+            app:layout_constraintEnd_toEndOf="@+id/txvAloha" app:layout_constraintStart_toStartOf="@+id/txvAloha"
+            android:textColor="@android:color/white" android:fontFamily="monospace"/>
     <Spinner
             android:layout_width="0dp"
             android:layout_height="41dp"
-            android:id="@+id/spnIdades" android:layout_marginTop="10dp"
-            app:layout_constraintTop_toBottomOf="@+id/txvIdade" android:layout_marginEnd="20dp"
+            android:id="@+id/spnIdades" android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/txvIdade" android:layout_marginEnd="40dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="20dp"/>
+            android:layout_marginStart="40dp" android:background="@android:color/white"/>
     <Button
             android:text="Clique Aqui e ganhe 1milhão"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/btnClique" android:textColor="@android:color/white"
-            android:background="#ef3e35" android:layout_marginTop="20dp"
+            android:background="#ef3e35" android:layout_marginTop="30dp"
             app:layout_constraintTop_toBottomOf="@+id/spnIdades"
             app:layout_constraintEnd_toEndOf="@+id/spnIdades"
-            app:layout_constraintStart_toStartOf="@+id/spnIdades"/>
+            app:layout_constraintStart_toStartOf="@+id/spnIdades" android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
     <TextView
             android:text="Resultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3" android:layout_marginEnd="172dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="176dp"
+            android:id="@+id/textView3" android:layout_marginEnd="170dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="170dp"
             android:layout_marginBottom="146dp" app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btnClique"/>
+            app:layout_constraintTop_toBottomOf="@+id/btnClique"
+            android:textColor="@android:color/white" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.297"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
